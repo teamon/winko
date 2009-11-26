@@ -20,7 +20,7 @@ table {
 }
 
 body {
-  font-size: 12pt;
+  font-size: 9pt;
   font-family: "Lucida Grande", "Trebuchet MS",Trebuchet,Tahoma,sans-serif;
 }
 
@@ -34,7 +34,7 @@ body {
 	margin: auto;
 }
 h1 {
-	width: 199px;
+	width: 173px;
 	height: 94px;
 	background: url("images/logo.png");
 	text-indent: -2000px;
@@ -43,6 +43,10 @@ h1 {
 	width: 800px;
 	min-height: 300px;
 	margin: auto;
+}
+#content p {
+	padding: 10px 0;
+	text-align: justify;
 }
 #footer {
 	height: 36px;
