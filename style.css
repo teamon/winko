@@ -1,0 +1,58 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+table {
+  border-collapse: collapse;
+}
+
+body {
+  font-size: 12pt;
+  font-family: "Lucida Grande", "Trebuchet MS",Trebuchet,Tahoma,sans-serif;
+}
+
+#container {
+	background: url("images/header_bg.png") repeat-x top;
+}
+
+#header {
+	height: 94px;
+	width: 800px;
+	margin: auto;
+}
+h1 {
+	width: 199px;
+	height: 94px;
+	background: url("images/logo.png");
+	text-indent: -2000px;
+}
+#content {
+	width: 800px;
+	min-height: 300px;
+	margin: auto;
+}
+#footer {
+	height: 36px;
+	background: url("images/footer_bg.png");
+}
+#footer p {
+	margin: auto;
+	width:  60px;
+	height: 36px;
+	background: url("images/footer.png");
+	text-indent: -2000px;
+}
+
