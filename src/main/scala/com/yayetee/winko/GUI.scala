@@ -1,4 +1,4 @@
-package com.yayetee
+package com.yayetee.winko
 
 import java.awt.event.{WindowAdapter, WindowEvent}
 import javax.swing._
@@ -22,7 +22,7 @@ object GUI extends Application {
   frame.setVisible(true)
 
   val client = new TuioClient
-  client.addTuioListener(PPObjectManager)
+  client.addTuioListener(ObjectManager)
   client.connect
 
 
@@ -47,14 +47,14 @@ class MainWindow(val useOpenGL: Boolean) extends PApplet {
   override def draw {
     background(GUI.BackgroundColor)
 
-    PPObjectManager.objects.foreach(e => {
+    ObjectManager.objects.foreach(e => {
       pushMatrix
       translate(e.x, e.y)
       e.paint(this)
       popMatrix
     })
 
-    PPObjectManager.gfxObjects.foreach(e => {
+    ObjectManager.gfxObjects.foreach(e => {
       pushMatrix
       e.paint(this)
       popMatrix

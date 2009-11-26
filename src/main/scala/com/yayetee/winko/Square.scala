@@ -1,17 +1,17 @@
-package com.yayetee
+package com.yayetee.winko
 
 import processing.core.PApplet
 import TUIO.TuioObject
 import Math._
 
-class SquareObject(tobj: TuioObject) extends PPObject(tobj) {
+class Square(tobj: TuioObject) extends TObject(tobj) {
   var i = 0
   var a = 0f
 
   override def update {
     closeObjects(400).foreach(e => {
       if(0 until 4 contains e.tobj.getSymbolID)
-        PPObjectManager.addGfxObject(new PPLine(this, e, 400))
+        ObjectManager.addGfxObject(new SineWave(this, e, 400))
     })
 
   }

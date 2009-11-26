@@ -23,7 +23,6 @@
     <orderEntry type="library" exported="" name="Maven: org.tuio:tuio:1.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.opengl:jogl:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.gluegen:gluegen-rt:1.0" level="project" />
-    <orderEntry type="library" exported="" name="Maven: com.sun.opengl:jogl-natives-macosx-universal:1.0" level="project" />
   </component>
 </module>
 

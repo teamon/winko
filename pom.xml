@@ -73,12 +73,6 @@
             <artifactId>gluegen-rt</artifactId>
             <version>1.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.sun.opengl</groupId>
-            <artifactId>jogl-natives-macosx-universal</artifactId>
-            <version>1.0</version>
-        </dependency>
     </dependencies>
 
     <build>

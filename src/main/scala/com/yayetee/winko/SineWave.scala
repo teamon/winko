@@ -1,17 +1,17 @@
-package com.yayetee
+package com.yayetee.winko
 
 import processing.core.PApplet
 import Math._
 
-class PPLine(val a: PPObject, val b: PPObject, val distance: Double) {
+class SineWave(val a: TObject, val b: TObject, val distance: Double) {
   var strokeWeight = 1f
   var strokeI = 0.03f
   var fi = 0f
 
   def paint(papplet: PApplet) {
-    val p = Utils.solveCircleLine(a, b, 40)
-    val q = Utils.solveCircleLine(b, a, 40)
-//
+    val p = Geometry.solveCircleLine(a, b, 40)
+    val q = Geometry.solveCircleLine(b, a, 40)
+    
 //    papplet.stroke(255)
 //    papplet.strokeWeight(strokeWeight)
 //    papplet.line(p.x.toFloat, p.y.toFloat, q.x.toFloat, q.y.toFloat)
@@ -40,9 +40,8 @@ class PPLine(val a: PPObject, val b: PPObject, val distance: Double) {
 
   }
 
-
   override def equals(other: Any) = other match {
-    case other: PPLine => (a == other.a && b == other.b) || (a == other.b && b == other.a)
+    case other: SineWave => (a == other.a && b == other.b) || (a == other.b && b == other.a)
     case _ => false
   }
 

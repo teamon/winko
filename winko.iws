@@ -65,55 +65,46 @@
   <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PPObjectManager.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/PPObjectManager.scala">
+      <file leaf-file-name="GUI.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/GUI.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="8" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+            <state line="13" column="31" selection-start="328" selection-end="333" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PPObject.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/PPObject.scala">
+      <file leaf-file-name="Square.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Square.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="15" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+            <state line="11" column="10" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PPLine.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/PPLine.scala">
+      <file leaf-file-name="Geometry.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Geometry.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="38" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="10" column="21" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/Utils.scala">
+      <file leaf-file-name="ObjectManager.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/ObjectManager.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="28" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+            <state line="21" column="30" selection-start="637" selection-end="637" vertical-scroll-proportion="0.84">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUI.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/GUI.scala">
+      <file leaf-file-name="Fader.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Fader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="18" selection-start="820" selection-end="820" vertical-scroll-proportion="1.2616823">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SquareObject.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/SquareObject.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+            <state line="6" column="6" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,15 +120,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/App.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/Utils.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/PPFaderObject.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/PPObject.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/PPLine.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/SquareObject.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/PPObjectManager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/GUI.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/GUI.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/PPFaderObject.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/PPObjectManager.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/SquareObject.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Fader.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/PPObject.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/TObject.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/PPLine.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Utils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Geometry.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Square.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/SineWave.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/ObjectManager.scala" />
       </list>
     </option>
   </component>
@@ -245,15 +243,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yayetee" />
+              <option name="myItemId" value="winko" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,11 +267,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="" />
@@ -501,9 +499,9 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
+    <configuration default="false" name="Main" type="Application" factoryName="Application">
       <extension name="snapshooter" />
-      <option name="MAIN_CLASS_NAME" value="com.yayetee.GUI" />
+      <option name="MAIN_CLASS_NAME" value="com.yayetee.winko.GUI" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -517,11 +515,11 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
-        <option name="Maven.BeforeRunTask" enabled="false" file="$PROJECT_DIR$/pom.xml" goal="compile" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
       </method>
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -546,26 +544,26 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="76" y="46" width="1280" height="742" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1280" height="716" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34567901" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34565917" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25324675" sideWeight="0.7330247" order="1" side_tool="false" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14366883" sideWeight="0.64790994" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5579976" order="3" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22808442" sideWeight="0.7330247" order="0" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25617284" sideWeight="0.9948905" order="2" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22727273" sideWeight="0.64790994" order="0" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34083602" sideWeight="0.9948905" order="2" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
     </layout>
@@ -603,54 +601,58 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/TObject.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/GUI.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="31" selection-start="328" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/SineWave.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.48387095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Square.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="10" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="72" selection-start="668" selection-end="668" vertical-scroll-proportion="0.4403131">
+        <state line="74" column="21" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.48902822">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/PPFaderObject.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Geometry.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/PPLine.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+        <state line="10" column="21" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/SquareObject.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Fader.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+        <state line="6" column="6" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/PPObject.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/ObjectManager.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/PPObjectManager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/Utils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/GUI.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="18" selection-start="820" selection-end="820" vertical-scroll-proportion="1.2616823">
+        <state line="21" column="30" selection-start="637" selection-end="637" vertical-scroll-proportion="0.84">
           <folding />
         </state>
       </provider>

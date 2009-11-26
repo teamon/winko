@@ -1,10 +1,10 @@
-package com.yayetee
+package com.yayetee.winko
 
 import processing.core.PApplet
 import TUIO.TuioObject
 import Math._
 
-abstract class PPObject(var tobj: TuioObject) {
+abstract class TObject(var tobj: TuioObject) {
   var removed = false
   def x = tobj.getX * GUI.WindowWidth
   def y = tobj.getY * GUI.WindowHeight
@@ -17,9 +17,9 @@ abstract class PPObject(var tobj: TuioObject) {
 
   def paint(p: PApplet)
 
-  def closeObjects(distance: Double) = PPObjectManager.objects.filter(o => o != this && o.closeTo(this, distance))
+  def closeObjects(distance: Double) = ObjectManager.objects.filter(o => o != this && o.closeTo(this, distance))
 
-  def closeTo(other: PPObject, distance: Double) = sqrt(pow(other.x - x, 2) + pow(other.y - y, 2)) <= distance
+  def closeTo(other: TObject, distance: Double) = sqrt(pow(other.x - x, 2) + pow(other.y - y, 2)) <= distance
 
 }
 

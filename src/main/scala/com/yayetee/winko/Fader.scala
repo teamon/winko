@@ -1,10 +1,10 @@
-package com.yayetee
+package com.yayetee.winko
 
 import processing.core.PApplet
 import TUIO.TuioObject
 import Math._
 
-class PPFaderObject(tobj: TuioObject) extends PPObject(tobj) {
+class Fader(tobj: TuioObject) extends TObject(tobj) {
   val e = 0.26
   var realAngle = 0.0
   var previousRotationSpeed = 0.0
@@ -13,7 +13,7 @@ class PPFaderObject(tobj: TuioObject) extends PPObject(tobj) {
   override def update {
     closeObjects(400).foreach(e => {
       if (4 until 8 contains e.tobj.getSymbolID)
-        PPObjectManager.addGfxObject(new PPLine(this, e, 400))
+        ObjectManager.addGfxObject(new SineWave(this, e, 400))
     })
 
 

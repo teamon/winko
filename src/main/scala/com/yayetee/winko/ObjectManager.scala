@@ -1,28 +1,29 @@
-package com.yayetee
+package com.yayetee.winko
 
 import TUIO._
 
-object PPObjectManager extends TuioListener {
-  var objects = List[PPObject]()
-  var gfxObjects = List[PPLine]()
+object ObjectManager extends TuioListener {
+  var objects = List[TObject]()
+  var gfxObjects = List[SineWave]()
 
-  def createPPObject(tobj: TuioObject): PPObject = {
+  def createPPObject(tobj: TuioObject): TObject = {
+    println(tobj.getSymbolID)
     tobj.getSymbolID match {
-      case x if 0 until 4 contains x => new SquareObject(tobj)
-      //case x if 4 until 8 contains x => new PPFaderObject(tobj)
-      case _ => new SquareObject(tobj)
+      //case x if 0 until 4 contains x => new Square(tobj)
+      case x if 4 until 8 contains x => new Fader(tobj)
+      case _ => new Square(tobj)
     }
   }
 
   def updateGfxObjects = gfxObjects.filter(!_.active).foreach(removeGfxObject(_))
 
-  def addGfxObject(gobj: PPLine) {
-    if(PPObjectManager.gfxObjects.filter(_ == gobj).size == 0){
+  def addGfxObject(gobj: SineWave) {
+    if(ObjectManager.gfxObjects.filter(_ == gobj).size == 0){
       gfxObjects = gobj :: gfxObjects
     }
   }
 
-  def removeGfxObject(gobj: PPLine) {
+  def removeGfxObject(gobj: SineWave) {
     gfxObjects = gfxObjects.remove(_ == gobj)
   }
 

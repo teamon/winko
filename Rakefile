@@ -30,7 +30,8 @@ task :deploy do
     FileUtils.rm_r(dirname)
   end
   
-  system("scp -r build verknowsys.com:~/public_html/winko/")
+  # system("scp -r build verknowsys.com:~/public_html/winko/")
+  system("cp -r build ~/public_html/winko/")
 
 end
 
