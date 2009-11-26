@@ -9,7 +9,7 @@ object PPObjectManager extends TuioListener {
   def createPPObject(tobj: TuioObject): PPObject = {
     tobj.getSymbolID match {
       case x if 0 until 4 contains x => new SquareObject(tobj)
-      case x if 4 until 8 contains x => new PPFaderObject(tobj)
+      //case x if 4 until 8 contains x => new PPFaderObject(tobj)
       case _ => new SquareObject(tobj)
     }
   }
