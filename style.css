@@ -39,6 +39,10 @@ h1 {
 	background: url("images/logo.png");
 	text-indent: -2000px;
 }
+h2 {
+	font-size: 12pt;
+	padding-top: 20px;
+}
 #content {
 	width: 800px;
 	min-height: 300px;
@@ -60,3 +64,28 @@ h1 {
 	text-indent: -2000px;
 }
 
+div.description {
+	text-align: center;
+	
+}
+
+p a, li a {
+	color: #00859d;
+	text-decoration: none;
+}
+p a:hover, li a:hover {
+	text-decoration: underline;
+}
+
+
+ul {
+	padding-left: 40px;
+}
+
+ul li {
+	padding-bottom: 5px;
+}
+
+ul li p {
+	margin-left: 10px;
+}
