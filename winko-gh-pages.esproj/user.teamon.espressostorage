@@ -21,6 +21,10 @@
 			<dict>
 				<key>StateType</key>
 				<string>PreviewTab</string>
+				<key>Title</key>
+				<string>winko.yayetee.com</string>
+				<key>URL</key>
+				<string>file:///Users/teamon/code/web/winko-gh-pages/index.html</string>
 			</dict>
 		</array>
 	</dict>
