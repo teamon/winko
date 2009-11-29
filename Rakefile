@@ -31,7 +31,8 @@ task :deploy do
   end
   
   # system("scp -r build verknowsys.com:~/public_html/winko/")
-  system("cp -r build ~/public_html/winko/")
+  # system("cp -r build ~/public_html/winko/")
+  
 
 end
 

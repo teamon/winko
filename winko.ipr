@@ -338,59 +338,59 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.processing:core:1.1">
+    <library name="Maven: org.processing:processing-core:1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/processing/core/1.1/core-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/processing/processing-core/1.1/processing-core-1.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/processing/core/1.1/core-1.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/processing/processing-core/1.1/processing-core-1.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/processing/core/1.1/core-1.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/processing/processing-core/1.1/processing-core-1.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.tuio:tuio:1.1">
+    <library name="Maven: org.processing:opengl:1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/tuio/tuio/1.1/tuio-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/processing/opengl/1.1/opengl-1.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/tuio/tuio/1.1/tuio-1.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/processing/opengl/1.1/opengl-1.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/tuio/tuio/1.1/tuio-1.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/processing/opengl/1.1/opengl-1.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.processing:opengl:1.1">
+    <library name="Maven: com.sun:jogl:1.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/processing/opengl/1.1/opengl-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/jogl/1.0/jogl-1.0.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/processing/opengl/1.1/opengl-1.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/jogl/1.0/jogl-1.0-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/processing/opengl/1.1/opengl-1.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/jogl/1.0/jogl-1.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.sun.opengl:jogl:1.0">
+    <library name="Maven: org.tuio:tuio:1.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/sun/opengl/jogl/1.0/jogl-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tuio/tuio/1.0/tuio-1.0.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/sun/opengl/jogl/1.0/jogl-1.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tuio/tuio/1.0/tuio-1.0-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/sun/opengl/jogl/1.0/jogl-1.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tuio/tuio/1.0/tuio-1.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.sun.gluegen:gluegen-rt:1.0">
+    <library name="Maven: com.sun:gluegen:1.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/sun/gluegen/gluegen-rt/1.0/gluegen-rt-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/gluegen/1.0/gluegen-1.0.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/sun/gluegen/gluegen-rt/1.0/gluegen-rt-1.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/gluegen/1.0/gluegen-1.0-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/sun/gluegen/gluegen-rt/1.0/gluegen-rt-1.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/gluegen/1.0/gluegen-1.0-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

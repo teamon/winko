@@ -15,6 +15,12 @@
             <name>Scala-Tools Maven2 Repository</name>
             <url>http://scala-tools.org/repo-releases</url>
         </repository>
+
+        <repository>
+            <id>teamon.eu</id>
+            <name>teamon.eu Maven 2 repository</name>
+            <url>http://s.teamon.eu/maven2/repository</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -45,13 +51,13 @@
         </dependency>
 
         <dependency>
-            <groupId>com.processing</groupId>
-            <artifactId>core</artifactId>
+            <groupId>org.processing</groupId>
+            <artifactId>processing-core</artifactId>
             <version>1.1</version>
         </dependency>
 
         <dependency>
-            <groupId>com.processing</groupId>
+            <groupId>org.processing</groupId>
             <artifactId>opengl</artifactId>
             <version>1.1</version>
         </dependency>
@@ -59,18 +65,18 @@
         <dependency>
             <groupId>org.tuio</groupId>
             <artifactId>tuio</artifactId>
-            <version>1.1</version>
+            <version>1.0</version>
         </dependency>
 
         <dependency>
-            <groupId>com.sun.opengl</groupId>
+            <groupId>com.sun</groupId>
             <artifactId>jogl</artifactId>
             <version>1.0</version>
         </dependency>
 
         <dependency>
-            <groupId>com.sun.gluegen</groupId>
-            <artifactId>gluegen-rt</artifactId>
+            <groupId>com.sun</groupId>
+            <artifactId>gluegen</artifactId>
             <version>1.0</version>
         </dependency>
     </dependencies>
@@ -120,7 +126,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.yayetee.GUI</mainClass>
+                            <mainClass>com.yayetee.winko.GUI</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

@@ -6,42 +6,60 @@ import processing.core._
 import processing.opengl._
 import TUIO.TuioClient
 
-object GUI extends Application {
+object GUI {
   val WindowWidth = 1024
   val WindowHeight = WindowWidth * 3 / 4
   val BackgroundColor = 51
-
+  var useOpenGL = false
+  var applet: PApplet = _
   val frame = new JFrame("winko")
-  val applet = new MainWindow
-  frame.getContentPane.add(applet)
   frame.addWindowListener(new WindowAdapter {
     override def windowClosing(e: WindowEvent) {exit}
   })
-  applet.init
-  frame.pack
-  frame.setVisible(true)
 
-  val client = new TuioClient
-  client.addTuioListener(ObjectManager)
-  client.connect
+  def main(args: Array[String]) {
+    //val useOpenGL = args.contains("--opengl")
+    val client = new TuioClient
+    client.addTuioListener(ObjectManager)
+    client.connect
 
+    setupWindow
+  }
+
+  def setupWindow {
+    if(applet != null) applet.destroy
+    applet = new MainWindow
+    applet.init
+
+    frame.setVisible(false)
+    frame.getContentPane.removeAll
+    frame.getContentPane.add(applet)
+    frame.pack
+    frame.setVisible(true)
+  }
 
 }
 
-class MainWindow(val useOpenGL: Boolean) extends PApplet {
-  def this() = this(true)
-  
+class MainWindow extends PApplet {
   override def setup {
-    //if(useOpenGL)
-    //  size(1024, 768)
-    size(1024, 768, PConstants.OPENGL)
+    if (GUI.useOpenGL) size(1024, 768, PConstants.OPENGL)
+    else size(1024, 768)
+
     smooth
     noStroke
 
     rectMode(PConstants.CENTER)
     ellipseMode(PConstants.CENTER)
 
-   // textFont(loadFont("res/QuicksandBook.vlw"));
+    textFont(loadFont("QuicksandBook.vlw"));
+  }
+
+  override def keyPressed {
+    if(key.toString.toLowerCase == "o"){
+      println("reload")
+      GUI.useOpenGL = !GUI.useOpenGL
+      GUI.setupWindow
+    }
   }
 
   override def draw {
