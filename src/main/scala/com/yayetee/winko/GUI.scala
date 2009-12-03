@@ -73,6 +73,13 @@ class MainWindow extends PApplet {
       popMatrix
     })
 
+    ObjectManager.cursors.foreach(e => {
+      pushMatrix
+      translate(e.x, e.y)
+      e.paint(this)
+      popMatrix
+    })
+
     ObjectManager.gfxObjects.foreach(e => {
       pushMatrix
       e.paint(this)

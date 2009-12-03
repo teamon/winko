@@ -27,19 +27,42 @@ class Keyboard(tobj: TuioObject) extends TObject(tobj) {
     p.fill(255, 0, 0)
     p.ellipse(0, 0, 40, 40)
 
-    //    p.fill(0, 255, 0)
-    //    p.rectMode(PConstants.CORNER)
-    //    p.rect(100, 100, 100, 100)
-
     p.stroke(0)
-
-    p.translate(-200, 50)
+    p.translate(-150, 50)
 
     p.rectMode(PConstants.CORNER)
-    keys.foreach(_.draw(p))
+
+    val mappedCursors = ObjectManager.cursors.map(c => {
+      val x0 = c.x - this.x + 150
+      val y0 = c.y - this.y - 50
+      var x = 0
+      var y = 0
+      var a0 = 0.0
+
+      val r = sqrt(pow(x0, 2) + pow(y0, 2))
+      if (r == 0) {
+        x = -1
+        y = -1
+      } else {
+        if (x0 > 0 && y0 > 0) a0 = asin(y0 / r)
+        else if (x0 < 0 && y0 > 0) a0 = Pi - asin(y0 / r)
+        else if (x0 < 0 && y0 < 0) a0 = Pi - asin(y0 / r)
+        else a0 = 2 * Pi + asin(y0 / r)
+      }
+
+      x = (r * cos(a0 - angle)).toInt
+      y = (r * sin(a0 - angle)).toInt
+      (x, y)
+    })
+
+    keys.foreach(k => {
+      mappedCursors.foreach(c => k.contains(c._1, c._2))
+      k.draw(p)
+    })
+
     p.noStroke
     p.rectMode(PConstants.CENTER)
-  }                                                                                                                         
+  }
 }
 
 class PianoKey(val tone: Int, val kind: Symbol, val offsetX: Int) {
@@ -70,6 +93,7 @@ class PianoKey(val tone: Int, val kind: Symbol, val offsetX: Int) {
   def draw(p: PApplet) {
     if (pressed) {
       p.fill(255, 0, 0)
+      pressed = false
     } else {
       if (kind == 'black) p.fill(0)
       else p.fill(255)
@@ -83,7 +107,10 @@ class PianoKey(val tone: Int, val kind: Symbol, val offsetX: Int) {
   }
 
   def contains(x: Int, y: Int) = {
-    pressed = rectangles(kind).exists(r => x >= r(0) && x <= r(2) && y >= r(1) && y <= r(3))
+    pressed = rectangles(kind).exists(r => {
+      x >= r(0) && x <= r(0) + r(2) && y >= r(1) && y <= r(1) + r(3)
+    })
+
     pressed
   }
 }

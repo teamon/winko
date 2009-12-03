@@ -4,6 +4,7 @@ import TUIO._
 
 object ObjectManager extends TuioListener {
   var objects = List[TObject]()
+  var cursors = List[TCursor]()
   var gfxObjects = List[SineWave]()
 
   def createPPObject(tobj: TuioObject): TObject = {
@@ -48,11 +49,15 @@ object ObjectManager extends TuioListener {
     updateGfxObjects
   }
 
-  def addTuioCursor(tcur: TuioCursor) {}
+  def addTuioCursor(tcur: TuioCursor) {
+    cursors = new TCursor(tcur) :: cursors
+  }
 
   def updateTuioCursor(tcur: TuioCursor) {}
 
-  def removeTuioCursor(tcur: TuioCursor) {}
+  def removeTuioCursor(tcur: TuioCursor) {
+    cursors = cursors.remove(_.tcur == tcur)
+  }
 
   def refresh(frameTime: TuioTime) {}
 
