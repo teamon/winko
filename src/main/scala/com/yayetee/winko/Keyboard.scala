@@ -39,28 +39,31 @@ class Keyboard(tobj: TuioObject) extends TObject(tobj) {
     keys.foreach(_.draw(p))
     p.noStroke
     p.rectMode(PConstants.CENTER)
-  }
+  }                                                                                                                         
 }
 
-
 class PianoKey(val tone: Int, val kind: Symbol, val offsetX: Int) {
-  val size = Map('ww -> 40, 'wh -> 200, 'bw -> 20, 'bh -> 100)
+  val wWidth = 40
+  val wHeight = 200
+  val bWidth = 20
+  val bHeight = 100
+
   var pressed = false
   val rectangles = Map(
     'black -> List(
-      List((offsetX + 1) * size('ww) - size('bw) / 2, 0, size('bw), size('bh))
+      List((offsetX + 1) * wWidth - bWidth / 2, 0, bWidth, bHeight)
       ),
     'white_left -> List(
-      List(offsetX * size('ww), 0, size('ww) - size('bw) / 2, size('bh)),
-      List(offsetX * size('ww), size('bh), size('ww), size('wh) - size('bh))
+      List(offsetX * wWidth, 0, wWidth - bWidth / 2, bHeight),
+      List(offsetX * wWidth, bHeight, wWidth, wHeight - bHeight)
       ),
     'white_center -> List(
-      List(offsetX * size('ww) + size('ww) - (size('ww) - size('bw) / 2), 0, size('ww) - size('bw), size('bh)),
-      List(offsetX * size('ww), size('bh), size('ww), size('wh) - size('bh))
+      List(offsetX * wWidth + wWidth - (wWidth - bWidth / 2), 0, wWidth - bWidth, bHeight),
+      List(offsetX * wWidth, bHeight, wWidth, wHeight - bHeight)
       ),
     'white_right -> List(
-      List(offsetX * size('ww) + size('ww) - (size('ww) - size('bw) / 2), 0, size('ww) - size('bw) / 2, size('bh)),
-      List(offsetX * size('ww), size('bh), size('ww), size('wh) - size('bh))
+      List(offsetX * wWidth + wWidth - (wWidth - bWidth / 2), 0, wWidth - bWidth / 2, bHeight),
+      List(offsetX * wWidth, bHeight, wWidth, wHeight - bHeight)
       )
     )
 
@@ -75,13 +78,12 @@ class PianoKey(val tone: Int, val kind: Symbol, val offsetX: Int) {
     rectangles(kind).foreach(drawRect(p, _))
   }
 
-  def drawRect(p: PApplet, rect: List[Int]){
+  def drawRect(p: PApplet, rect: List[Int]) {
     p.rect(rect(0), rect(1), rect(2), rect(3))
   }
 
   def contains(x: Int, y: Int) = {
-    pressed = rectangles(kind).count(r => x >= r(0) && x<= r(2) && y >= r(1) && y <= r(3)) > 0
+    pressed = rectangles(kind).exists(r => x >= r(0) && x <= r(2) && y >= r(1) && y <= r(3))
     pressed
   }
 }
-
