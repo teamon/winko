@@ -18,7 +18,7 @@ object GUI {
   })
 
   def main(args: Array[String]) {
-    //val useOpenGL = args.contains("--opengl")
+    useOpenGL = args.contains("--opengl")
     val client = new TuioClient
     client.addTuioListener(ObjectManager)
     client.connect
@@ -31,6 +31,7 @@ object GUI {
     applet = new MainWindow
     applet.init
 
+//    frame.setUndecorated(true)
     frame.setVisible(false)
     frame.getContentPane.removeAll
     frame.getContentPane.add(applet)

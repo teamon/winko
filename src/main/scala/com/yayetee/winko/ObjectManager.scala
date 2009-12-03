@@ -10,6 +10,7 @@ object ObjectManager extends TuioListener {
     println(tobj.getSymbolID)
     tobj.getSymbolID match {
       //case x if 0 until 4 contains x => new Square(tobj)
+      case 0 => new Keyboard(tobj)
       case x if 4 until 8 contains x => new Fader(tobj)
       case _ => new Square(tobj)
     }

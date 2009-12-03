@@ -36,8 +36,6 @@ class SineWave(val a: TObject, val b: TObject, val distance: Double) {
 
     fi += 0.2f
     if(fi > 2*Pi) fi = 0f
-
-
   }
 
   override def equals(other: Any) = other match {
