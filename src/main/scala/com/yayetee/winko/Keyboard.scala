@@ -33,8 +33,8 @@ class Keyboard(tobj: TuioObject) extends TObject(tobj) {
     p.rectMode(PConstants.CORNER)
 
     val mappedCursors = ObjectManager.cursors.map(c => {
-      val x0 = c.x - this.x + 150
-      val y0 = c.y - this.y - 50
+      val x0 = c.x - this.x
+      val y0 = c.y - this.y
       var x = 0
       var y = 0
       var a0 = 0.0
@@ -50,8 +50,8 @@ class Keyboard(tobj: TuioObject) extends TObject(tobj) {
         else a0 = 2 * Pi + asin(y0 / r)
       }
 
-      x = (r * cos(a0 - angle)).toInt
-      y = (r * sin(a0 - angle)).toInt
+      x = (r * cos(a0 - angle)).toInt  + 150
+      y = (r * sin(a0 - angle)).toInt  - 50
       (x, y)
     })
 
