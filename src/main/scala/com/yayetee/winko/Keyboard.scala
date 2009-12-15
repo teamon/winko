@@ -6,20 +6,23 @@ import processing.core.{PConstants, PApplet}
 import collection.immutable.Map
 
 class Keyboard(tobj: TuioObject) extends TObject(tobj) {
-  val keys = new PianoKey(1, 'white_left, 0) ::
-          new PianoKey(2, 'black, 0) ::
-          new PianoKey(3, 'white_center, 1) ::
-          new PianoKey(4, 'black, 1) ::
-          new PianoKey(5, 'white_right, 2) ::
-          new PianoKey(6, 'white_left, 3) ::
-          new PianoKey(7, 'black, 3) ::
-          new PianoKey(8, 'white_center, 4) ::
-          new PianoKey(9, 'black, 4) ::
-          new PianoKey(10, 'white_center, 5) ::
-          new PianoKey(11, 'black, 5) ::
-          new PianoKey(12, 'white_right, 6) ::
-          Nil
+  val keys = List.flatten((0 to 2).map(octave(_)).toList)
 
+  def octave(n: Int) = {
+    new PianoKey(n, 1, 'white_left, 0) ::
+            new PianoKey(n, 2, 'black, 0) ::
+            new PianoKey(n, 3, 'white_center, 1) ::
+            new PianoKey(n, 4, 'black, 1) ::
+            new PianoKey(n, 5, 'white_right, 2) ::
+            new PianoKey(n, 6, 'white_left, 3) ::
+            new PianoKey(n, 7, 'black, 3) ::
+            new PianoKey(n, 8, 'white_center, 4) ::
+            new PianoKey(n, 9, 'black, 4) ::
+            new PianoKey(n, 10, 'white_center, 5) ::
+            new PianoKey(n, 11, 'black, 5) ::
+            new PianoKey(n, 12, 'white_right, 6) ::
+            Nil
+  }
 
   def paint(p: PApplet) {
     p.noStroke
@@ -50,8 +53,8 @@ class Keyboard(tobj: TuioObject) extends TObject(tobj) {
         else a0 = 2 * Pi + asin(y0 / r)
       }
 
-      x = (r * cos(a0 - angle)).toInt  + 150
-      y = (r * sin(a0 - angle)).toInt  - 50
+      x = (r * cos(a0 - angle)).toInt + 150
+      y = (r * sin(a0 - angle)).toInt - 50
       (x, y)
     })
 
@@ -65,11 +68,15 @@ class Keyboard(tobj: TuioObject) extends TObject(tobj) {
   }
 }
 
-class PianoKey(val tone: Int, val kind: Symbol, val offsetX: Int) {
+class PianoKey(val octave: Int, val _tone: Int, val kind: Symbol, val _offsetX: Int) {
   val wWidth = 40
   val wHeight = 200
   val bWidth = 20
   val bHeight = 100
+
+  def offsetX = octave * 7 + _offsetX
+
+  def tone = octave * 12 + _tone
 
   var pressed = false
   val rectangles = Map(
