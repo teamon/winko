@@ -20,6 +20,10 @@ trait Callbacks {
 		callbacks(name) += f
 	}
 
+	def removeCallbacks(name: String){
+		callbacks.removeKey(name)
+	}
+
 	def fireCallbacks(name: String) {
 		if (callbacks.contains(name)) callbacks(name).foreach(_())
 	}

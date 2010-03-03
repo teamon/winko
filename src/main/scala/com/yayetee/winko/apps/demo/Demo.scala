@@ -3,8 +3,7 @@ package com.yayetee.winko.apps.demo
 import com.yayetee.winko.engine._
 import TUIO.TuioObject
 import processing.core.PApplet
-import actors.Actor
-import Math.Pi
+import com.yayetee.winko.gui.ProcessingEntity
 
 /**
  * User: teamon
@@ -20,23 +19,25 @@ import Math.Pi
 
 object Demo extends Application {
 	def createObject(tobj: TuioObject): Entity = tobj.getSymbolID match {
+		case 1 => new Fader(tobj)
 		case _ => new Circle(tobj)
 	}
 
 }
 
 
-class Circle(tobj: TuioObject) extends Entity(tobj) {
+class Circle(tobj: TuioObject) extends Entity(tobj) with ProcessingEntity {
 	var animAngle = 0f
+	var diameter = 0f
 
 	registerCallback("oncreate", () => {
-		animate(new FloatAnimation(0f, (2*Pi).toFloat, 0.1f, 50, animAngle = _))
+		animate(new AngleAnimation(50, animAngle = _))
+		animate(new FloatAnimation(0f, 400f, 2f, 10, diameter = _))
 	})
 
 
 	override def draw(p: PApplet) {
 		p.translate(x, y)
-
 
 		p.noStroke
 		p.rotate(animAngle)
@@ -46,12 +47,7 @@ class Circle(tobj: TuioObject) extends Entity(tobj) {
 		p.fill(0, 0, 0, 0)
 		p.stroke(255)
 		p.strokeWeight(5f)
-		//    p.ellipse(0, 0, i+5, i+5)
-		//
-		//    i+= 2
-		//    if(i > 400) i = 0
-		//    a += 0.1f
-		//    if(a > 2*Pi) a = 0;
+		p.ellipse(0, 0, diameter, diameter)
 
 		p.noStroke
 		p.fill(255, 0, 0)

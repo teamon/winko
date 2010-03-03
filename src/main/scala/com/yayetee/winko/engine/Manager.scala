@@ -38,15 +38,15 @@ object Manager extends TuioListener {
 	}
 
 	def addTuioCursor(tcur: TuioCursor) {
-		Logger.debug("TuioCursor added {0}", tcur)
+		Logger.debug("TuioCursor added %s", tcur)
 	}
 
 	def updateTuioCursor(tcur: TuioCursor) {
-		Logger.debug("TuioCursor updated {0}", tcur)
+		Logger.debug("TuioCursor updated %s", tcur)
 	}
 
 	def removeTuioCursor(tcur: TuioCursor) {
-		Logger.debug("TuioCursor removed {0}", tcur)
+		Logger.debug("TuioCursor removed %s", tcur)
 	}
 
 	def refresh(frameTime: TuioTime) {

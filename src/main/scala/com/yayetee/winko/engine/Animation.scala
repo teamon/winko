@@ -1,6 +1,7 @@
 package com.yayetee.winko.engine
 
 import collection.mutable.ListBuffer
+import Math._
 
 /**
  * User: teamon
@@ -24,25 +25,29 @@ trait Animations extends Callbacks {
 
 case class StopAnimation
 
-abstract class Animation extends Thread {
+abstract class Animation(val timeout: Int) extends Thread {
 	var keep = true
 
 	def stopAnimation {keep = false}
-}
-
-class FloatAnimation(val from: Float, val to: Float, val step: Float, val timeout: Int, val func: Float => Unit) extends Animation {
-	var current = from
-
 
 	override def run {
 		while (keep) {
-			current += step
-			if (current > to) current = from
-			func(current)
-
+			tick
 			Thread.sleep(timeout)
 		}
 	}
 
-
+	def tick
 }
+
+class FloatAnimation(val from: Float, val to: Float, val step: Float, timeout: Int, val func: Float => Unit) extends Animation(timeout) {
+	var current = from
+
+	override def tick {
+		current += step
+		if (current > to) current = from
+		func(current)
+	}
+}
+
+class AngleAnimation(timeout: Int, func: Float => Unit) extends FloatAnimation(0, (2*Pi).toFloat, 0.1f, timeout, func)

@@ -3,7 +3,7 @@ package com.yayetee.winko.gui
 import processing.core.{PConstants, PApplet}
 import java.awt.event.{WindowEvent, WindowAdapter}
 import javax.swing.JFrame
-import com.yayetee.winko.engine.{Logger, Engine, Manager}
+import com.yayetee.winko.engine.{Engine, Manager}
 
 /**
  * User: teamon
@@ -16,6 +16,7 @@ import com.yayetee.winko.engine.{Logger, Engine, Manager}
  */
 
 object Processing {
+	val useOpenGL = false
 	val applet = new MainWindow
 	val frame = new JFrame("winko")
 	
@@ -41,7 +42,8 @@ trait ProcessingEntity {
 
 class MainWindow extends PApplet {
 	override def setup {
-		size(Engine.resolution.width, Engine.resolution.height)
+		if(Processing.useOpenGL) size(Engine.resolution.width, Engine.resolution.height, PConstants.OPENGL)
+		else size(Engine.resolution.width, Engine.resolution.height)
 
 		smooth
 		noStroke
@@ -60,13 +62,12 @@ class MainWindow extends PApplet {
 		Manager.entities.foreach(e => {
 			pushMatrix
 			pushStyle
-			e.draw(this)
+			e.asInstanceOf[ProcessingEntity].draw(this)
 			popMatrix
 			popStyle
 		})
 
-
-
+		// fps
 		textSize(15)
     text("fps = " + frameRate.toInt, 20, 20)
 	}

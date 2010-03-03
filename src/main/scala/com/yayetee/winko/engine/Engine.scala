@@ -1,7 +1,8 @@
 package com.yayetee.winko.engine
 
-import com.yayetee.winko.apps.demo.Demo
 import TUIO.{TuioObject, TuioClient}
+
+import com.yayetee.winko.apps.demo.Demo // temporary
 import com.yayetee.winko.gui.Processing // temporary
 
 /**
