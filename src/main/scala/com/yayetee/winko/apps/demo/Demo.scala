@@ -31,8 +31,8 @@ class Circle(tobj: TuioObject) extends Entity(tobj) with ProcessingEntity {
 	var diameter = 0f
 
 	registerCallback("oncreate", () => {
-		animate(new AngleAnimation(50, animAngle = _))
-		animate(new FloatAnimation(0f, 400f, 2f, 10, diameter = _))
+		animate(new AngleAnimation(50, (v) => animAngle = v))
+		animate(new FloatAnimation(0f, 400f, 2f, 10, (v) => diameter = v))
 	})
 
 
