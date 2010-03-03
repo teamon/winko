@@ -22,17 +22,17 @@ object Manager extends TuioListener {
 
 	def addTuioObject(tobj: TuioObject) {
 		val entity = Engine.app.createObject(tobj)
-		entity.created
+		entity.fireCallbacks("oncreate")
 		entities += entity
 	}
 
 	def updateTuioObject(tobj: TuioObject) {
-		entities.find(_.tobj == tobj).map(_.updated)
+		entities.find(_.tobj == tobj).map(_.fireCallbacks("onupdate"))
 	}
 
 	def removeTuioObject(tobj: TuioObject) {
 		entities.find(_.tobj == tobj).map(e => {
-			e.removed
+			e.fireCallbacks("onremove")
 			entities -= e
 		})
 	}

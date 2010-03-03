@@ -9,7 +9,7 @@ import com.yayetee.winko.gui.{ProcessingEntity}
  * Time: 15:52:19
  */
 
-abstract class Entity(val tobj: TuioObject) extends ProcessingEntity {
+abstract class Entity(val tobj: TuioObject) extends Callbacks with ProcessingEntity {
 	def x = (tobj.getX * Engine.resolution.width).toInt
 
 	def y = (tobj.getY * Engine.resolution.height).toInt
@@ -18,12 +18,11 @@ abstract class Entity(val tobj: TuioObject) extends ProcessingEntity {
 
 	// callbacks
 
-	def created = Logger.debug("Entity {0} created ({1}, {2}, {3})", this.getClass, x, y, angle)
+	registerCallback("oncreate", () => { Logger.debug("Entity {0} created ({1}, {2}, {3})", this.getClass, x, y, angle) })
 
-	def updated = Logger.debug("Entity {0} updated ({1}, {2}, {3})", this.getClass, x, y, angle)
+	registerCallback("onupdate", () => { Logger.debug("Entity {0} updated ({1}, {2}, {3})", this.getClass, x, y, angle) })
 
-	def removed = Logger.debug("Entity {0} removed ({1}, {2}, {3})", this.getClass, x, y, angle)
-
+	registerCallback("onremove", () => { Logger.debug("Entity {0} removed ({1}, {2}, {3})", this.getClass, x, y, angle) })
 
 }
 

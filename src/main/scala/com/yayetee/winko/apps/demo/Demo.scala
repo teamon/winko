@@ -29,9 +29,12 @@ object Demo extends Application {
 class Circle(tobj: TuioObject) extends Entity(tobj) {
 	var animAngle = 0f
 
-	override def created {
+	registerCallback("oncreate", () => {
+		
+	})
+
 //		new Animation(0f, (2 * Pi).toFloat, 0.1f, animAngle = _)
-	}
+
 
 	override def draw(p: PApplet) {
 		p.translate(x, y)

@@ -65,46 +65,28 @@
   <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Processing.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/Processing.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Keyboard.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/Keyboard.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUI.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/GUI.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Engine.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Engine.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="$TEMPLATE$" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Entity.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Entity.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0882353">
+            <state line="20" column="63" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Callbacks.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Callbacks.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="$TEMPLATE$" selection-start="409" selection-end="409" vertical-scroll-proportion="0.61764705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Manager.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Manager.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="41" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,7 +104,7 @@
       <file leaf-file-name="Demo.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="$TEMPLATE$" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="33" column="4" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,8 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/SineWave.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/GUI.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/GUISystem.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/GUI.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -148,12 +128,14 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Listener.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Logger.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Manager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Engine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/Processing.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/Animation.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Manager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Entity.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Callback.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Callbacks.scala" />
       </list>
     </option>
   </component>
@@ -811,13 +793,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/TGenericObject.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="75" selection-end="75" vertical-scroll-proportion="0.14705883">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/TObject.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="0.11469534">
@@ -835,13 +810,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/tuio/tuio/1.0/tuio-1.0.jar!/TUIO/TuioObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="142" selection-end="142" vertical-scroll-proportion="0.09073724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Manager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="$TEMPLATE$" selection-start="297" selection-end="297" vertical-scroll-proportion="0.19713262">
           <folding />
         </state>
       </provider>
@@ -902,16 +870,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Manager.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="$TEMPLATE$" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+        <state line="29" column="41" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Entity.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0882353">
+        <state line="20" column="63" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="4" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Callbacks.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="$TEMPLATE$" selection-start="409" selection-end="409" vertical-scroll-proportion="0.61764705">
           <folding />
         </state>
       </provider>
