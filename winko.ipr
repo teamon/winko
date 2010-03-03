@@ -231,17 +231,6 @@
     <mapping directory="" vcs="" />
   </component>
   <component name="libraryTable">
-    <library name="Maven: org.scala-lang:scala-library:2.7.0">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.0/scala-library-2.7.0.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.0/scala-library-2.7.0-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.0/scala-library-2.7.0-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: junit:junit:4.4">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/" />
@@ -372,6 +361,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/sun/gluegen/1.0/gluegen-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.scala-lang:scala-library:2.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

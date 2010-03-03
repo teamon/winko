@@ -30,10 +30,8 @@ class Circle(tobj: TuioObject) extends Entity(tobj) {
 	var animAngle = 0f
 
 	registerCallback("oncreate", () => {
-		
+		animate(new FloatAnimation(0f, (2*Pi).toFloat, 0.1f, 50, animAngle = _))
 	})
-
-//		new Animation(0f, (2 * Pi).toFloat, 0.1f, animAngle = _)
 
 
 	override def draw(p: PApplet) {

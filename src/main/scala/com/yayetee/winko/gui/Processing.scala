@@ -3,7 +3,7 @@ package com.yayetee.winko.gui
 import processing.core.{PConstants, PApplet}
 import java.awt.event.{WindowEvent, WindowAdapter}
 import javax.swing.JFrame
-import com.yayetee.winko.engine.{Engine, Manager}
+import com.yayetee.winko.engine.{Logger, Engine, Manager}
 
 /**
  * User: teamon
@@ -41,7 +41,7 @@ trait ProcessingEntity {
 
 class MainWindow extends PApplet {
 	override def setup {
-		size(Engine.resolution.width, Engine.resolution.height, PConstants.OPENGL)
+		size(Engine.resolution.width, Engine.resolution.height)
 
 		smooth
 		noStroke
@@ -49,7 +49,9 @@ class MainWindow extends PApplet {
 		rectMode(PConstants.CENTER)
 		ellipseMode(PConstants.CENTER)
 
-		textFont(loadFont("QuicksandBook.vlw"));
+		textFont(loadFont("QuicksandBook.vlw"))
+
+		frameRate(200)
 	}
 
 	override def draw {
@@ -62,5 +64,10 @@ class MainWindow extends PApplet {
 			popMatrix
 			popStyle
 		})
+
+
+
+		textSize(15)
+    text("fps = " + frameRate.toInt, 20, 20)
 	}
 }

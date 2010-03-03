@@ -9,7 +9,7 @@ import com.yayetee.winko.gui.{ProcessingEntity}
  * Time: 15:52:19
  */
 
-abstract class Entity(val tobj: TuioObject) extends Callbacks with ProcessingEntity {
+abstract class Entity(val tobj: TuioObject) extends Callbacks with Animations with ProcessingEntity {
 	def x = (tobj.getX * Engine.resolution.width).toInt
 
 	def y = (tobj.getY * Engine.resolution.height).toInt
