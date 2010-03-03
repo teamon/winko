@@ -10,7 +10,11 @@ import TUIO.TuioClient
  * Time: 14:14:30
  */
 
-object Main {	
+class Dimension(val width: Int, val height: Int)
+
+object Main {
+	val resolution = new Dimension(1024, 768)
+
 	def main(args: Array[String]){
 		Logger.info("Starting up")
 //		Processing.init

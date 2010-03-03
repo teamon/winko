@@ -14,7 +14,7 @@ import javax.swing.JFrame
  * Basic GUI object that uses Processing API
  */
 
-object Processing {
+object Processing extends Renderer {
 	def init {
 		val applet = new MainWindow
 		applet.init
