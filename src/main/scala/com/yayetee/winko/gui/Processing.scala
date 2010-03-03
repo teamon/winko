@@ -16,7 +16,7 @@ import com.yayetee.winko.engine.{Engine, Manager}
  */
 
 object Processing {
-	val useOpenGL = false
+	val useOpenGL = true
 	val applet = new MainWindow
 	val frame = new JFrame("winko")
 	

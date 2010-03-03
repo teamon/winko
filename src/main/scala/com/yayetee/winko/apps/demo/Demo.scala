@@ -19,7 +19,8 @@ import com.yayetee.winko.gui.ProcessingEntity
 
 object Demo extends Application {
 	def createObject(tobj: TuioObject): Entity = tobj.getSymbolID match {
-		case 1 => new Fader(tobj)
+		case 0 => new Piano(tobj)
+		case 2 => new Fader(tobj)
 		case _ => new Circle(tobj)
 	}
 
