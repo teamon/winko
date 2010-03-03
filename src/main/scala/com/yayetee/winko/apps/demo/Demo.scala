@@ -28,11 +28,11 @@ object Demo extends Application {
 
 class Circle(tobj: TuioObject) extends Entity(tobj) with ProcessingEntity {
 	var animAngle = 0f
-	var diameter = 0f
+	var diameter = 0
 
 	registerCallback("oncreate", () => {
 		animate(new AngleAnimation(50, (v) => animAngle = v))
-		animate(new FloatAnimation(0f, 400f, 2f, 10, (v) => diameter = v))
+		animate(new LinearAnimation[Int](0, 400, 2, 10, (v) => diameter = v))
 	})
 
 

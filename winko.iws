@@ -77,7 +77,7 @@
       <file leaf-file-name="Animation.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Animation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="$TEMPLATE$" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
+            <state line="53" column="79" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="Demo.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="49" selection-start="521" selection-end="521" vertical-scroll-proportion="0.7751371">
+            <state line="22" column="30" selection-start="463" selection-end="463" vertical-scroll-proportion="0.40773287">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Logger.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Callback.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/Animation.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Animation.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Engine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Manager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Entity.scala" />
@@ -116,8 +115,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Callbacks.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/Processing.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/yayetee/MySpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Animation.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala" />
       </list>
     </option>
   </component>
@@ -724,7 +724,7 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="201" y="33" width="1296" height="939" extended-state="$TEMPLATE$" />
+    <frame x="48" y="31" width="1597" height="971" extended-state="$TEMPLATE$" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -734,14 +734,14 @@
       <window_info id="Color Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29032257" sideWeight="0.91924155" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28" sideWeight="0.99874765" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19101124" sideWeight="0.31907514" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27337" sideWeight="0.69044006" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5579976" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22993827" sideWeight="0.6624424" order="$TEMPLATE$" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18659988" sideWeight="0.66333336" order="$TEMPLATE$" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32949308" sideWeight="0.99691355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288889" sideWeight="0.99691355" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="$TEMPLATE$" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -853,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Entity.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="$TEMPLATE$" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/gui/Processing.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="22" selection-start="817" selection-end="817" vertical-scroll-proportion="1.2577697">
@@ -876,14 +869,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Animation.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="$TEMPLATE$" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
+        <state line="53" column="79" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/engine/Entity.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="$TEMPLATE$" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/yayetee/winko/apps/demo/Demo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="49" selection-start="521" selection-end="521" vertical-scroll-proportion="0.7751371">
+        <state line="22" column="30" selection-start="463" selection-end="463" vertical-scroll-proportion="0.40773287">
           <folding />
         </state>
       </provider>

@@ -40,7 +40,8 @@ abstract class Animation(val timeout: Int) extends Thread {
 	def tick
 }
 
-class FloatAnimation(val from: Float, val to: Float, val step: Float, timeout: Int, val func: Float => Unit) extends Animation(timeout) {
+class LinearAnimation[T](val from: T, val to: T, val step: T, timeout: Int, val func: T => Unit)(implicit n: Numeric[T]) extends Animation(timeout) {
+	import n._
 	var current = from
 
 	override def tick {
@@ -50,4 +51,4 @@ class FloatAnimation(val from: Float, val to: Float, val step: Float, timeout: I
 	}
 }
 
-class AngleAnimation(timeout: Int, func: Float => Unit) extends FloatAnimation(0, (2*Pi).toFloat, 0.1f, timeout, func)
+class AngleAnimation(timeout: Int, func: Float => Unit) extends LinearAnimation(0, (2*Pi).toFloat, 0.1f, timeout, func)
