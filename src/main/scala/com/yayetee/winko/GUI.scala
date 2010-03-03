@@ -10,7 +10,7 @@ object GUI {
   val WindowWidth = 1024
   val WindowHeight = WindowWidth * 3 / 4
   val BackgroundColor = 51
-  var useOpenGL = false
+  var useOpenGL = true
   var applet: PApplet = _
   val frame = new JFrame("winko")
   frame.addWindowListener(new WindowAdapter {
@@ -18,7 +18,7 @@ object GUI {
   })
 
   def main(args: Array[String]) {
-    useOpenGL = args.contains("--opengl")
+//    useOpenGL = args.contains("--opengl")
     val client = new TuioClient
     client.addTuioListener(ObjectManager)
     client.connect
@@ -43,8 +43,9 @@ object GUI {
 
 class MainWindow extends PApplet {
   override def setup {
-    if (GUI.useOpenGL) size(1024, 768, PConstants.OPENGL)
-    else size(1024, 768)
+//    if (GUI.useOpenGL)
+	    size(1024, 768, PConstants.OPENGL)
+//    else size(1024, 768)
 
     smooth
     noStroke
@@ -68,22 +69,28 @@ class MainWindow extends PApplet {
 
     ObjectManager.objects.foreach(e => {
       pushMatrix
+      pushStyle
       translate(e.x, e.y)
       e.paint(this)
       popMatrix
+      popStyle
     })
 
     ObjectManager.cursors.foreach(e => {
       pushMatrix
+      pushStyle
       translate(e.x, e.y)
       e.paint(this)
       popMatrix
+      popStyle
     })
 
     ObjectManager.gfxObjects.foreach(e => {
       pushMatrix
+      pushStyle
       e.paint(this)
       popMatrix
+      popStyle
     })
   }
 }

@@ -5,7 +5,7 @@ import TUIO._
 object ObjectManager extends TuioListener {
   var objects = List[TObject]()
   var cursors = List[TCursor]()
-  var gfxObjects = List[SineWave]()
+  var gfxObjects = List[TGfxObject]()
 
   def createPPObject(tobj: TuioObject): TObject = {
     println(tobj.getSymbolID)
@@ -19,13 +19,13 @@ object ObjectManager extends TuioListener {
 
   def updateGfxObjects = gfxObjects.filter(!_.active).foreach(removeGfxObject(_))
 
-  def addGfxObject(gobj: SineWave) {
+  def addGfxObject(gobj: TGfxObject) {
     if(ObjectManager.gfxObjects.filter(_ == gobj).size == 0){
       gfxObjects = gobj :: gfxObjects
     }
   }
 
-  def removeGfxObject(gobj: SineWave) {
+  def removeGfxObject(gobj: TGfxObject) {
     gfxObjects = gfxObjects.remove(_ == gobj)
   }
 

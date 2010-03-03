@@ -1,0 +1,4 @@
+Usage:
+
+mvn assembly
+rake deploy

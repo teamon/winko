@@ -3,7 +3,7 @@ package com.yayetee.winko
 import processing.core.PApplet
 import Math._
 
-class SineWave(val a: TObject, val b: TObject, val distance: Double) {
+class SineWave(val a: TObject, val b: TObject, val distance: Double) extends TGfxObject {
   var strokeWeight = 1f
   var strokeI = 0.03f
   var fi = 0f
@@ -43,7 +43,7 @@ class SineWave(val a: TObject, val b: TObject, val distance: Double) {
     case _ => false
   }
 
-  def active = !a.removed && !b.removed && a.closeTo(b, distance)
+  override def active = !a.removed && !b.removed && a.closeTo(b, distance)
 
 }
 

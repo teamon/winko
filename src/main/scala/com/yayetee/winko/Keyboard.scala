@@ -6,7 +6,7 @@ import processing.core.{PConstants, PApplet}
 import collection.immutable.Map
 
 class Keyboard(tobj: TuioObject) extends TObject(tobj) {
-  val keys = List.flatten((0 to 2).map(octave(_)).toList)
+  val keys = (0 to 2).flatMap(octave(_)).toList
 
   def octave(n: Int) = {
     new PianoKey(n, 1, 'white_left, 0) ::
