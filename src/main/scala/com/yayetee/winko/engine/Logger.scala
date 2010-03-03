@@ -30,11 +30,10 @@ object Logger {
 	}
 
 	protected def from = {
-		var from = ""
-		try {
+		val from = try {
 			throw new LoggerException
 		} catch {
-			case e:LoggerException => from = e.getStackTrace()(2).toString
+			case e:LoggerException => e.getStackTrace()(2).toString
 		}
 		" (" + from + ")"
 	}

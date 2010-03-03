@@ -1,28 +1,40 @@
 package com.yayetee.winko.engine
 
+import scala.collection.mutable.ListBuffer
 import TUIO._
 
 /**
  * User: teamon
  * Date: 2010-03-03
- * Time: 15:04:31
+ * Time: 15:03:20
  */
 
 /**
- *TuioListener class implementation
+ * Master object manager
+ *
+ * Listens to TUIO messages
  */
 
-class Listener extends TuioListener {
+object Manager extends TuioListener {
+	val entities = new ListBuffer[Entity]
+
+	// TUIO Listeners
+
 	def addTuioObject(tobj: TuioObject) {
-		Logger.debug("TuioObject added {0}", tobj)
+		val entity = Engine.app.createObject(tobj)
+		entity.created
+		entities += entity
 	}
 
 	def updateTuioObject(tobj: TuioObject) {
-		Logger.debug("TuioObject updated {0}", tobj)
+		entities.find(_.tobj == tobj).map(_.updated)
 	}
 
 	def removeTuioObject(tobj: TuioObject) {
-		Logger.debug("TuioObject removed {0}", tobj)
+		entities.find(_.tobj == tobj).map(e => {
+			e.removed
+			entities -= e
+		})
 	}
 
 	def addTuioCursor(tcur: TuioCursor) {
@@ -38,6 +50,7 @@ class Listener extends TuioListener {
 	}
 
 	def refresh(frameTime: TuioTime) {
-		Logger.debug("Tuio refresh ", frameTime)
+		//		Logger.debug("Tuio refresh ", frameTime)
 	}
+
 }
